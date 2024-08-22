@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student-Teacher Appointment System</title>
+  <link rel="stylesheet" href="student_login.css">
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="../js/firebase_config.js"></script>
+  <script src="student_login.js" defer></script>
+</head>
+<body>
+  <div class="form-container" id="loginForm">
+      <h2>Student Login</h2>
+      <form id="loginFormElement">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" autocomplete="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" autocomplete="current-password" required>
+          <button type="submit">Login</button>
+      </form>
+      <p>Not registered? <a href="#" onclick="showSignupForm()">Sign up</a></p>
+  </div>
+
+  <div class="signup-form-container" id="signupForm">
+      <h2>Student Signup</h2>
+      <form id="signupFormElement">
+          <label for="newUsername">Username:</label>
+          <input type="text" id="newUsername" name="newUsername" autocomplete="username" required>
+          <label for="newPassword">Password:</label>
+          <input type="password" id="newPassword" name="newPassword" autocomplete="new-password" required>
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+          <label for="studentID">Student ID:</label>
+          <input type="text" id="studentID" name="studentID" autocomplete="off" required>
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" autocomplete="organization" required>
+          <label for="yearOfStudy">Year of Study:</label>
+          <select id="yearOfStudy" name="yearOfStudy" autocomplete="off" required>
+              <option value="1">First Year</option>
+              <option value="2">Second Year</option>
+              <option value="3">Third Year</option>
+              <option value="4">Fourth Year</option>
+              <option value="5">High School</option>
+              <option value="6">Secondary School</option>
+          </select>
+          <button type="submit">Sign Up</button>
+      </form>
+      <p>Already registered? <a href="#" onclick="showLoginForm()">Log in</a></p>
+  </div>
+

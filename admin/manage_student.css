@@ -1,0 +1,65 @@
+/* manage_student.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#studentList {
+    margin-top: 20px;
+}
+
+.student-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.student-item:hover {
+    background-color: #e8f06d; /* Light grey background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+.student-item p {
+    margin: 5px 0;
+}
+
+.student-item .approveBtn,
+.student-item .rejectBtn {
+    background-color: #3ae220;
+    color: rgb(26, 1, 1);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.student-item .rejectBtn {
+    background-color: #dc3545;
+    color: rgb(244, 236, 236);
+}
+
+.student-item .approveBtn:hover,
+.student-item .rejectBtn:hover {
+    opacity: 0.8;
+}

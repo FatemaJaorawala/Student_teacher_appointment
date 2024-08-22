@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pending Appointments - Teacher Dashboard</title>
+  <link rel="stylesheet" href="pendingappointments.css">
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="../js/firebase_config.js"></script>
+  <script src="pendingappointments.js" defer></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <h1>Teacher Dashboard</h1>
+      <ul class="navbar-links">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="pendingappointments.html">Pending Appointments</a></li>
+        <li><a href="showhistory.html">Show History</a></li> <!-- Updated link -->
+        <li><a href="teacher_logout.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>Pending Appointments</h2>
+    <div id="appointmentsContainer">
+      <!-- Appointments will be displayed here -->
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - Student-Teacher Appointment System</title>
+  <link rel="stylesheet" href="bookappointment.css">
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="../js/firebase_config.js"></script>
+  <script src="bookappointment.js" defer></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="student_showhistory.html">Show History</a></li>
+    </ul>
+  </nav>
+
+  <!-- Appointment Form -->
+  <div class="form-container">
+      <h2>Book an Appointment</h2>
+      <form id="appointmentForm">
+          <label for="teacher">Select Teacher:</label>
+          <select id="teacher" name="teacher" required>
+              <option value="" disabled selected>Select a teacher</option>
+              <!-- Options will be populated dynamically -->
+          </select>
+
+          <label for="date">Select Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="time">Select Time:</label>
+          <input type="time" id="time" name="time" required>
+
+          <button type="submit">Book Appointment</button>
+      </form>
+      <p id="confirmationMessage"></p>
+  </div>
+</body>
+</html>

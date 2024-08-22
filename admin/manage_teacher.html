@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Teachers - Student-Teacher Appointment System</title>
+  <link rel="stylesheet" href="manage_teacher.css">
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="../js/firebase_config.js"></script>
+  <script src="manage_teacher.js" defer></script>
+</head>
+<body>
+  
+  <div class="content">
+    <h1>Manage Teachers</h1>
+    <form id="teacherForm">
+      <input type="text" id="teacherName" placeholder="Teacher Name" required>
+      <input type="text" id="teacherDepartment" placeholder="Department" required>
+      <input type="email" id="teacherEmail" placeholder="Email" required>
+      <input type="text" id="teacherExperience" placeholder="Years of Experience" required>
+      <button type="submit">Add Teacher</button>
+    </form>
+
+    <div id="teachersList">
+      <!-- List of teachers will be populated here -->
+    </div>
+  </div>
+</body>
+</html>
